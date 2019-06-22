@@ -18,7 +18,7 @@ https://gitlab.cse.unsw.edu.au/z5555555/19T2-cs2511-lab04
 
 Included in this repo is the code from this week's tutorial for the refactored movie rental example. This code uses the strategy pattern to price different movie rentals.
 
-* Add a new type of movie, `Classic`. Classic movies can be rented for up to 5 days for $2. Each additional day after those 2 days costs $1.
+* Add a new type of movie, `Classic`. Classic movies can be rented for up to 5 days for $2. Each additional day after those 5 days costs $1.
 
 Watch this video from our esteemed tutor Hugh on the state pattern.
 

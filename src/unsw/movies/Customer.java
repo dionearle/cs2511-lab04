@@ -40,13 +40,36 @@ public class Customer {
 
     public static void main(String[] args) {
         Customer c1 = new Customer("Mary Jane Watson");
-        Movie m = new Movie("Gone with the wind", new Regular());
+        
+        // Example where someone rents a new release 
+        // (initial state)
+        Movie m = new Movie("Gone with the wind");
         Rental r = new Rental(m, 3);
         c1.addRental(r);
-
-        m = new Movie("Finding Nemo", new Childrens());
-        r = new Rental(m, 7);
-        c1.addRental(r);
+        
+        // Example where they rent a regular movie 
+        // (might transition after a month)
+        Movie m2 = new Movie("Inception");
+        m2.setState(m2.getRegularState());
+        Rental r2 = new Rental(m2, 3);
+        c1.addRental(r2);
+        
+        
+        // Example where they rent a children's movie
+        // (transitions in similar way to regular yet is
+        // categorised for children)
+        Movie m3 = new Movie("Finding Nemo");
+        m3.setState(m3.getChildrensState());
+        Rental r3 = new Rental(m3, 3);
+        c1.addRental(r3);
+        
+        // Example where they rent a classic movie
+        // (transitions after 10 years and given average
+        // rating is above 8)
+        Movie m4 = new Movie("Kill Bill");
+        m4.setState(m4.getClassicState());
+        Rental r4 = new Rental(m4, 3);
+        c1.addRental(r4);
 
         System.out.println(c1.statement());
 

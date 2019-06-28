@@ -1,6 +1,6 @@
 package unsw.movies;
 
-public class Regular implements Price {
+public class RegularState implements State {
 
     @Override
     public double getCharge(int daysRented) {

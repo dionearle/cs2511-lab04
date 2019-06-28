@@ -1,5 +1,5 @@
 package unsw.movies;
 
-public interface Price {
+public interface State {
     public double getCharge(int daysRented);
 }

@@ -37,11 +37,22 @@ Modify this file (`README.md`) and, using your solution as an example, answer th
 
 * What advantages does the state pattern have over the strategy pattern?
 
-    > TODO Write answer here
+    > The state pattern removes the need for multiple if statements to determine the many different things
+    an object could do when an action is performed. 
+    
+    For example, if there is a vending machine, rather than having multiple if statements to determine 
+    what should happen when someone gives it money, each state of the vending machine simply implements 
+    its own version of the this function.
+    
+    Additionally, it allows for the state of an object to be changed dynamically during runtime. Using
+    the same vending machine example, if the approprirate money is given to the machine, its state can 
+    easily be modified so that the execution of all its functions now match this new state.
 
 * Conversely, what disadvantages does the state pattern have over the strategy pattern?
 
-    > TODO Write answer here
+    > If the object does not regularly change states (or if it doesn't have many different states) then the 
+    state pattern is quite redundant. For example, I think the strategy pattern was for more effective for
+    the movie rentals, as most movies will not change their state often (if at all).
 
 ## Submission
 

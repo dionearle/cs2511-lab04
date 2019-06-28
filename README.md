@@ -40,11 +40,11 @@ Modify this file (`README.md`) and, using your solution as an example, answer th
     > The state pattern removes the need for multiple if statements to determine the many different things
     an object could do when an action is performed. 
     
-    For example, if there is a vending machine, rather than having multiple if statements to determine 
+    > For example, if there is a vending machine, rather than having multiple if statements to determine 
     what should happen when someone gives it money, each state of the vending machine simply implements 
     its own version of the this function.
     
-    Additionally, it allows for the state of an object to be changed dynamically during runtime. Using
+    > Additionally, it allows for the state of an object to be changed dynamically during runtime. Using
     the same vending machine example, if the approprirate money is given to the machine, its state can 
     easily be modified so that the execution of all its functions now match this new state.
 
